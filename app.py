@@ -3,9 +3,7 @@ from google import genai
 import time
 
 st.set_page_config(page_title="MoodGPT", page_icon="🎭", layout="centered")
-
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
-
 MOODS = {
     "Funny": "You are a hilarious comedian. Keep responses witty and entertaining.",
     "Angry": "You are dramatically angry but still funny and safe.",
